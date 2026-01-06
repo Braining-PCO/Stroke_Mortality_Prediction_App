@@ -379,7 +379,7 @@ def main():
     # Header
     st.image("logo.png", width=400)
     st.markdown(
-        '<div class="main-header"> Stroke Mortality Risk Prediction App/div>',
+        '<div class="main-header"> Stroke Mortality Risk Prediction App</div>',
         unsafe_allow_html=True)
 
     st.markdown("""
