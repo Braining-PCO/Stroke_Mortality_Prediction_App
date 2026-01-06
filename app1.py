@@ -7,6 +7,15 @@ import joblib
 import shap
 from openai import OpenAI
 import os
+import base64
+
+
+def get_base64_image(image_path):
+    with open(image_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+
+
+logo_base64 = get_base64_image("logo.png")
 
 # Page configuration
 st.set_page_config(page_title="Stroke Mortality Risk Prediction",
@@ -370,7 +379,7 @@ def main():
     # Header
     st.markdown("""
         <div style="text-align: center;">
-            <img src="logo.png" width="120">
+            <img src="data:image/png;base64,{logo_base64}" width="120">
             <div class="main-header">Braining's Stroke Mortality Risk Prediction App</div>
         </div>
         """,
