@@ -19,7 +19,7 @@ logo_base64 = get_base64_image("logo.png")
 
 # Page configuration
 st.set_page_config(page_title="Stroke Mortality Risk Prediction",
-                   page_icon="🏥",
+                   page_icon="logo.png",
                    layout="wide",
                    initial_sidebar_state="expanded")
 
