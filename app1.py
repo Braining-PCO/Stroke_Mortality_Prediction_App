@@ -377,13 +377,10 @@ def main():
         st.session_state.top_values = None
 
     # Header
-    st.markdown("""
-        <div style="text-align: center;">
-            <img src="data:image/png;base64,{logo_base64}" width="120">
-            <div class="main-header">Braining's Stroke Mortality Risk Prediction App</div>
-        </div>
-        """,
-                unsafe_allow_html=True)
+    st.image("logo.png", width=120)
+    st.markdown(
+        '<div class="main-header"> Stroke Mortality Risk Prediction App/div>',
+        unsafe_allow_html=True)
 
     st.markdown("""
     This clinical decision support system predicts stroke mortality risk at multiple time horizons
