@@ -377,7 +377,7 @@ def main():
         st.session_state.top_values = None
 
     # Header
-    st.image("logo.png", width=120)
+    st.image("logo.png", width=400)
     st.markdown(
         '<div class="main-header"> Stroke Mortality Risk Prediction App/div>',
         unsafe_allow_html=True)
